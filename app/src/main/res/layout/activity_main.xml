@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SlidingPaneLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/SlidingPanel"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:background="@color/navigation_color"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:padding="@dimen/activity_horizontal_margin">
+
+
+
+        <LinearLayout
+            android:id="@+id/menuContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/buttonBottomContainer"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingBottom="54dp">
+
+            <Button
+                android:id="@+id/button1"
+                style="@style/MenuNavigation3ButtonMenu"
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:layout_marginTop="32dp"
+                android:drawableRight="@drawable/ic_arrow_menu"
+                android:onClick="onClick"
+                android:text="Explore"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/button2"
+                style="@style/MenuNavigation3ButtonMenu"
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:drawableRight="@drawable/ic_arrow_menu"
+                android:onClick="onClick"
+                android:text="Timeline"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/button3"
+                style="@style/MenuNavigation3ButtonMenu"
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:drawableRight="@drawable/ic_arrow_menu"
+                android:onClick="onClick"
+                android:text="Photos"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/button4"
+                style="@style/MenuNavigation3ButtonMenu"
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:drawableRight="@drawable/ic_arrow_menu"
+                android:onClick="onClick"
+                android:text="Videos"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/button5"
+                style="@style/MenuNavigation3ButtonMenu"
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:drawableRight="@drawable/ic_arrow_menu"
+                android:onClick="onClick"
+                android:text="Messages"
+                android:textAllCaps="false" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/buttonBottomContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:padding="12dp">
+
+            <ImageButton
+                android:id="@+id/btnLogout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="@android:color/transparent"
+                android:onClick="onClick"
+                android:src="@drawable/ic_logout" />
+
+            <ImageButton
+                android:id="@+id/btnSetting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:background="@android:color/transparent"
+                android:onClick="onClick"
+                android:src="@drawable/ic_setting" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+    <android.support.v4.widget.DrawerLayout
+    android:id="@+id/drawer"
+    android:orientation="vertical"
+    android:background="#1f1f20"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+
+        <include
+
+            layout="@layout/toolbar"
+            />
+
+        <FrameLayout
+            android:layout_below="@+id/toolbar"
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/bottom_navigation"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="0dp" />
+
+        <android.support.design.widget.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            app:menu="@menu/bottom_navigation"
+            app:itemTextColor="@color/white"
+            android:background="#434343"/>
+
+
+    </RelativeLayout>
+
+
+</android.support.v4.widget.DrawerLayout>
+
+
+  <!--  <android.support.design.widget.NavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/header_menu"
+        app:menu="@menu/drawermenu" />-->
+
+</android.support.v4.widget.SlidingPaneLayout>

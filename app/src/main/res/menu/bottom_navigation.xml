@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item
+    android:id="@+id/nav_home"
+    android:icon="@drawable/ic_grammer"
+    android:title="grammar"/>
+    <item
+        android:id="@+id/nav_favorite_topic"
+        android:icon="@drawable/ic_favorite_black_24dp"
+        android:title="phrasal verbs"/>
+    <item
+        android:id="@+id/nav_favorite_idioms"
+        android:icon="@drawable/ic_favorite_border_black_24dp"
+        android:title="idioms"/>
+    <item
+        android:id="@+id/nav_irregular_verbs"
+        android:icon="@drawable/book"
+        android:title="irregular verbs"/>
+</menu>

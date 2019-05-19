@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1f1f20">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/lin_1"
+                android:padding="0dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="144dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/categories_two_background">
+
+
+
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:layout_width="66dp"
+                        android:layout_height="66dp"
+                        android:src="@drawable/ic_internet"/>
+
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/txt_size"
+                        android:text="@string/categories"/>
+
+
+
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/lin_2"
+                android:layout_below="@id/lin_1"
+                android:padding="0dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="144dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/quizzes_two_background">
+
+
+                    <!--<android.support.v7.widget.AppCompatImageView
+                        android:scaleType="center"
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:src="@drawable/ic_internet" />-->
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:layout_width="66dp"
+                        android:layout_height="66dp"
+                        android:src="@drawable/ic_target"/>
+
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/txt_size"
+                        android:text="@string/quizzes"/>
+
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:background="@drawable/quizzes_two_background"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:layout_width="66dp"
+                        android:layout_height="66dp"
+                        android:src="@drawable/ic_man_thinking"/>
+
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/txt_size"
+                        android:text="@string/phrasal"/>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/lin_3"
+                android:layout_below="@id/lin_2"
+                android:padding="0dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="144dp">
+
+
+
+                <RelativeLayout
+                    android:id="@+id/rel_3"
+                    android:background="@drawable/random_backgraund"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:layout_alignParentRight="true"
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/ic_favorite_border_black_24dp"/>
+
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_alignParentLeft="true"
+                        android:id="@+id/txt_random"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/txt_size"
+                        android:text="@string/random"/>
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_alignParentLeft="true"
+
+                        android:layout_below="@+id/txt_random"
+                        android:id="@+id/txt_title"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/txt_size"
+                        android:text="Title"/>
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_alignParentLeft="true"
+
+                        android:layout_below="@+id/txt_title"
+                        android:id="@+id/txt_dec"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="60dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/txt_size"
+                        android:text="SimpleText is the native text editor for the Apple classic Mac OS.[1] SimpleText allows editing including text formatting (underline, italic, bold, etc.),"/>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+    </ScrollView>
+
+
+
+
+</FrameLayout>
